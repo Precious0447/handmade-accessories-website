@@ -1,0 +1,307 @@
+/* =========================
+   ABOUT PAGE
+========================= */
+
+.about-page {
+  background-color: var(--soft-white);
+  color: var(--jet-black);
+}
+
+
+/* =========================
+   ABOUT HERO
+========================= */
+
+.about-hero {
+  padding: 90px 20px;
+  background-color: var(--lavender);
+  text-align: center;
+}
+
+.about-hero p:first-child {
+  color: var(--deep-purple);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+}
+
+.about-hero h1 {
+  max-width: 850px;
+  margin: 0 auto 15px;
+  color: var(--deep-purple);
+  font-size: 52px;
+  line-height: 1.15;
+}
+
+.about-hero p:last-child {
+  color: var(--deep-purple);
+  font-size: 19px;
+  font-weight: 600;
+}
+
+
+/* =========================
+   OUR STORY
+========================= */
+
+.about-story {
+  padding: 90px 60px;
+  background-color: var(--soft-white);
+}
+
+.about-story-content {
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.section-label {
+  color: var(--deep-purple);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.about-story h2 {
+  color: var(--deep-purple);
+  font-size: 40px;
+  line-height: 1.2;
+  margin-bottom: 30px;
+}
+
+.about-story-content p:not(.section-label) {
+  color: #444;
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+
+/* =========================
+   MORE THAN ACCESSORIES
+========================= */
+
+.about-values {
+  padding: 90px 60px;
+  background-color: var(--deep-purple);
+  color: var(--soft-white);
+  text-align: center;
+}
+
+.about-values > div {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about-values .section-label {
+  color: var(--lavender);
+}
+
+.about-values h2 {
+  font-size: 40px;
+  margin-bottom: 25px;
+}
+
+.about-values p:not(.section-label) {
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 18px;
+}
+
+
+/* =========================
+   FOUNDER
+========================= */
+
+.founder-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 600px;
+  background-color: #f2edff;
+}
+
+.founder-image {
+  width: 100%;
+  height: 100%;
+  min-height: 600px;
+}
+
+.founder-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.founder-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 70px;
+}
+
+.founder-content h2 {
+  color: var(--deep-purple);
+  font-size: 42px;
+  margin-bottom: 5px;
+}
+
+.founder-content h3 {
+  color: #555;
+  font-size: 17px;
+  font-weight: 500;
+  margin-bottom: 25px;
+}
+
+.founder-content p:not(.section-label) {
+  max-width: 500px;
+  color: #444;
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 18px;
+}
+
+
+/* =========================
+   VISION
+========================= */
+
+.about-vision {
+  padding: 90px 60px;
+  background-color: var(--lavender);
+  text-align: center;
+}
+
+.about-vision h2 {
+  color: var(--deep-purple);
+  font-size: 40px;
+  margin-bottom: 25px;
+}
+
+.about-vision > p:not(.section-label) {
+  max-width: 750px;
+  margin: 0 auto 30px;
+  color: var(--jet-black);
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.about-vision a {
+  display: inline-block;
+  padding: 13px 28px;
+  background-color: var(--deep-purple);
+  color: var(--soft-white);
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.about-vision a:hover {
+  background-color: var(--jet-black);
+}
+
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 900px) {
+
+  .founder-section {
+    grid-template-columns: 1fr;
+  }
+
+  .founder-image {
+    min-height: 500px;
+    height: 500px;
+  }
+
+  .founder-content {
+    padding: 60px 40px;
+    text-align: center;
+    align-items: center;
+  }
+}
+
+
+@media (max-width: 600px) {
+
+  .about-hero {
+    padding: 70px 20px;
+  }
+
+  .about-hero h1 {
+    font-size: 38px;
+  }
+
+  .about-story,
+  .about-values,
+  .about-vision {
+    padding: 60px 25px;
+  }
+
+  .about-story h2,
+  .about-values h2,
+  .about-vision h2 {
+    font-size: 32px;
+  }
+
+  .founder-image {
+    min-height: 420px;
+    height: 420px;
+  }
+
+  .founder-content {
+    padding: 50px 25px;
+  }
+
+  .founder-content h2 {
+    font-size: 34px;
+  }
+}
+
+/* =========================================
+   ADDITIONAL ABOUT PAGE RESPONSIVENESS
+========================================= */
+
+@media (max-width: 600px) {
+
+  .about-page section {
+    min-width: 0;
+  }
+
+  .about-hero h1 {
+    overflow-wrap: anywhere;
+  }
+
+  .about-story-content,
+  .about-values > div,
+  .founder-content {
+    min-width: 0;
+    overflow-wrap: anywhere;
+  }
+
+  .founder-image {
+    width: 100%;
+    min-width: 0;
+    overflow: hidden;
+  }
+
+  .founder-image img {
+    width: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    object-position: center top;
+  }
+
+  .founder-content h2 {
+    overflow-wrap: anywhere;
+  }
+
+  .about-vision > p:not(.section-label) {
+    overflow-wrap: anywhere;
+  }
+
+}

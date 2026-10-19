@@ -1,0 +1,326 @@
+/* =========================
+   HOW TO ORDER PAGE
+========================= */
+
+.how-to-order-page {
+  background-color: var(--soft-white);
+  color: var(--jet-black);
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.how-to-order-hero {
+  padding: 90px 20px;
+  background-color: var(--lavender);
+  text-align: center;
+}
+
+.how-to-order-hero > p:first-child {
+  color: var(--deep-purple);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+}
+
+.how-to-order-hero h1 {
+  max-width: 800px;
+  margin: 0 auto 20px;
+  color: var(--deep-purple);
+  font-size: 52px;
+  line-height: 1.15;
+}
+
+.how-to-order-hero > p:last-child {
+  max-width: 650px;
+  margin: 0 auto;
+  color: var(--jet-black);
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+
+/* =========================
+   ORDER STEPS
+========================= */
+
+.order-steps {
+  padding: 90px 60px;
+  background-color: var(--soft-white);
+}
+
+.order-steps-heading {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.section-label {
+  color: var(--deep-purple);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.order-steps-heading h2 {
+  color: var(--deep-purple);
+  font-size: 40px;
+}
+
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.step-card {
+  padding: 35px 25px;
+  background-color: #f2edff;
+  border: 1px solid rgba(67, 48, 117, 0.12);
+  border-radius: 12px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.step-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(67, 48, 117, 0.15);
+}
+
+.step-card span {
+  display: block;
+  margin-bottom: 18px;
+  color: var(--lavender);
+  font-size: 34px;
+  font-weight: 700;
+}
+
+.step-card h3 {
+  color: var(--deep-purple);
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.step-card p {
+  color: #555;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+
+/* =========================
+   CUSTOM ORDER SECTION
+========================= */
+
+.custom-order-section {
+  padding: 80px 60px;
+  background-color: var(--deep-purple);
+  color: var(--soft-white);
+  text-align: center;
+}
+
+.custom-order-section > div {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.custom-order-section .section-label {
+  color: var(--lavender);
+}
+
+.custom-order-section h2 {
+  font-size: 40px;
+  margin-bottom: 25px;
+}
+
+.custom-order-section p:not(.section-label) {
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+
+/* =========================
+   CONTACT / ORDER CTA
+========================= */
+
+.order-contact {
+  padding: 90px 60px;
+  background-color: var(--lavender);
+  text-align: center;
+}
+
+.order-contact h2 {
+  color: var(--deep-purple);
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.order-contact > p:not(.section-label) {
+  max-width: 650px;
+  margin: 0 auto 30px;
+  color: var(--jet-black);
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.order-contact-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.order-contact-buttons a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 13px 24px;
+  background-color: var(--deep-purple);
+  color: var(--soft-white);
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.order-contact-buttons a:hover {
+  background-color: var(--jet-black);
+}
+
+.order-contact-buttons svg {
+  font-size: 20px;
+}
+
+.order-contact-details {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.order-contact-details p {
+  color: var(--deep-purple);
+  font-size: 15px;
+}
+
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 1000px) {
+
+  .steps-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+@media (max-width: 900px) {
+
+  .how-to-order-hero h1 {
+    font-size: 42px;
+  }
+
+  .order-steps,
+  .custom-order-section,
+  .order-contact {
+    padding: 70px 40px;
+  }
+}
+
+
+@media (max-width: 600px) {
+
+  .how-to-order-hero {
+    padding: 70px 20px;
+  }
+
+  .how-to-order-hero h1 {
+    font-size: 36px;
+  }
+
+  .how-to-order-hero > p:last-child {
+    font-size: 15px;
+  }
+
+  .order-steps,
+  .custom-order-section,
+  .order-contact {
+    padding: 60px 20px;
+  }
+
+  .order-steps-heading h2,
+  .custom-order-section h2,
+  .order-contact h2 {
+    font-size: 32px;
+  }
+
+  .steps-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .step-card {
+    padding: 30px 20px;
+  }
+
+  .order-contact-buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .order-contact-buttons a {
+    justify-content: center;
+  }
+
+  .order-contact-details {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
+
+/* =========================================
+   ADDITIONAL HOW TO ORDER RESPONSIVENESS
+========================================= */
+
+@media (max-width: 600px) {
+
+  .how-to-order-page section {
+    min-width: 0;
+  }
+
+  .how-to-order-hero h1 {
+    overflow-wrap: anywhere;
+  }
+
+  .step-card {
+    min-width: 0;
+  }
+
+  .step-card h3,
+  .step-card p {
+    overflow-wrap: anywhere;
+  }
+
+  .custom-order-section > div {
+    min-width: 0;
+  }
+
+  .order-contact-buttons a {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .order-contact-details p {
+    overflow-wrap: anywhere;
+  }
+
+}
